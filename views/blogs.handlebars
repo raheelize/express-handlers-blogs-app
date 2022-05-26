@@ -1,0 +1,13 @@
+{{#if blogs}}
+<div class="section">
+    {{#each blogs}}
+        <div class="card m-5" style="width:100%">
+        <div class="card-body">
+            <h5 class="card-title">{{this.title}}</h5>
+            {{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
+            <a href="/blogs/{{this.slug}}" class="btn btn-primary">Read</a>
+        </div>
+        </div>
+    {{/each}}
+</div>
+{{/if}}
